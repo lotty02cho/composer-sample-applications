@@ -10,16 +10,16 @@ export class DesignerPage {
 
   constructor(public navController: NavController) {
     this.cars = [{
-      name: 'Nebula',
-      image: 'bmw_2.png',
+      name: 'Black',
+      image: 'black.jpg',
       zoom: 'cover'
     }, {
-      name: 'Nova',
-      image: 'bmw_1.jpeg',
+      name: 'Normal',
+      image: 'normal.jpeg',
       zoom: 'cover'
     }, {
-      name: 'Thanos',
-      image: 'bmw_3.jpeg',
+      name: 'york',
+      image: 'york.jpg',
       zoom: 'cover'
     }]
   }

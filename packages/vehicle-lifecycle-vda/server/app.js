@@ -69,11 +69,14 @@ app.use('/*', function (req, res, next) {
 //app.use(bodyParser.json());
 
 // get the app environment from Cloud Foundry
-var appEnv = cfenv.getAppEnv();
+//var appEnv = cfenv.getAppEnv();
+
+var port = 6100;
 
 // start server on the specified port
-server.listen(appEnv.port, function () {
+//server.listen(appEnv.port, function () {
+server.listen(port, function () {
   'use strict';
   // print a message when the server starts listening
-  console.log('server starting on ' + appEnv.url);
+  console.log('server starting on ' + port);
 });

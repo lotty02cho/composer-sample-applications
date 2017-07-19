@@ -75,8 +75,8 @@ app.use(bodyParser.json());
 var appEnv = cfenv.getAppEnv();
 
 // start server on the specified port
-server.listen(appEnv.port, function () {
+server.listen(6200, function () {
   'use strict';
   // print a message when the server starts listening
-  console.log('server starting on ' + appEnv.url);
+  console.log('server starting on localhost://6200');
 });
